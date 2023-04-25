@@ -1,1 +1,2 @@
+docker build -t sbdg .
 docker run -it --mount type=bind,src="$(pwd)/filestorage",target=/app/var/filestorage -p 19565:19565 sbdg
