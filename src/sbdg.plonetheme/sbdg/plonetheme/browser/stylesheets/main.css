@@ -1,0 +1,4 @@
+/* Stylesheet for the 'SBDG Plone Theme' Plone theme */
+body {
+    background-image: url(++resource++sbdg.plonetheme.images/background.gif);
+}

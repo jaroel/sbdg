@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="deliverance.plonetheme.various"
+               version="20090725-01"
+               handler="deliverance.plonetheme.setuphandlers.setupVarious"
+               title="Deliverance Plone Theme: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

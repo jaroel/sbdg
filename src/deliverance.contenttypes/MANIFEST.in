@@ -1,0 +1,3 @@
+recursive-include deliverance *
+include *
+global-exclude *.pyc

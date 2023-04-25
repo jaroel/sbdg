@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="sbdg.policy">
+
+   <five:registerPackage package="." initialize=".initialize" />
+
+	<genericsetup:registerProfile
+		name="default"
+		title="SBDG Policy"
+		directory="profiles/default"
+		description="SBDG Policy"
+		provides="Products.GenericSetup.interfaces.EXTENSION"
+		/>
+		
+	<!-- include the other packages -->
+	<include package="Products.TinyMCE" />
+	<include package="sbdg.plonetheme" />
+
+</configure>

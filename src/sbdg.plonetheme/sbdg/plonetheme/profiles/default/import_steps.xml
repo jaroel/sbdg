@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="sbdg.plonetheme.various"
+               version="20090801-01"
+               handler="sbdg.plonetheme.setuphandlers.setupVarious"
+               title="SBDG Plone Theme: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

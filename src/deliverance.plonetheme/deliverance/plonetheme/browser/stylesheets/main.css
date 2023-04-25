@@ -1,0 +1,86 @@
+body, .documentContent, textarea, input, body#tinymce {
+    background: transparent;
+}
+
+body, .documentContent, body.documentContent {
+    background-color: black;
+}
+
+.portalMessage {
+    color: #444;
+}
+
+#portal-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#visual-portal-wrapper {
+    width: 1012px;
+    margin: auto auto;
+}
+
+#portal-globalnav li a, #portal-globalnav li.selected a {
+    border: 0;
+    font-size: 200%;
+    padding: 0;
+}
+
+td.mceToolbar {
+    background-color: #8CACBB !important;
+}
+
+li.formTab a.selected {
+    background-color: #8CACBB;
+}
+body.template-document_view #content img,
+body.template-bandleden_view #content img {
+    border: 1px solid #eee;
+}
+
+#portal-columns {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 2px;
+}
+
+#portal-globalnav li.selected a {
+    color: #fff;
+}
+
+.documentFirstHeading {
+    display: none;
+}
+
+.ploneSkin .mceEditorFocus .mceIframeContainer {
+    background-color: black !important;
+}
+
+/* bandview */
+.bandledenview {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.bandledenview td {
+    max-width: 152px;
+    _width: 152px;
+}
+
+/* bandlidview */
+#content .links {
+    float: left;
+    width: 300px;
+    text-align: center;
+}
+
+#content .rechts {
+    float: left;
+    width: 650px;
+}
+
+.template-bandlid_view .documentFirstHeading {
+    display: block;
+}
+

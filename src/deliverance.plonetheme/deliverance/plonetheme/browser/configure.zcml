@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="deliverance.plonetheme">
+
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="Deliverance Plone Theme"
+      />
+
+  <browser:resourceDirectory
+      name="deliverance.plonetheme.images"
+      directory="images"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+
+  <browser:resourceDirectory
+      name="deliverance.plonetheme.stylesheets"
+      directory="stylesheets"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+	<!-- content views -->
+	
+  <browser:page
+     name="bandleden_view"
+     for="*"
+     template="templates/bandleden.pt"
+     permission="zope2.View" />
+
+</configure>

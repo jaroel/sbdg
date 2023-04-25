@@ -1,0 +1,3 @@
+recursive-include jaroel *
+include *
+global-exclude *.pyc

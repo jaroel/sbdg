@@ -1,0 +1,20 @@
+# Four Digits Made By Translations
+# Rob Gietema <rob@fourdigits.nl>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: fourdigits.madeby trunk\n"
+"POT-Creation-Date: 2009-09-14 15:12+0000\n"
+"PO-Revision-Date: 2009-09-14 15:12+0000\n"
+"Last-Translator: Rob Gietema <rob@fourdigits.nl>\n"
+"Language-Team: Four Digits <rob@fourdigits.nl>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: nl\n"
+"Language-Name: Dutch\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: fourdigits.madeby\n"
+
+msgid "Realisatie door <a href=\"http://www.fourdigits.nl/portfolio\">Four Digits</a> op basis van <a href=\"http://www.fourdigits.nl/techniek/plone\">Plone</a>."
+msgstr ""
