@@ -1,10 +1,16 @@
-FROM ubuntu:bionic as os
-RUN apt update
-RUN apt install software-properties-common -y
-RUN add-apt-repository ppa:deadsnakes
-RUN apt update
-RUN apt install python2.4-dev build-essential libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libz-dev -y
+FROM ubuntu:xenial as os
 RUN useradd -ms /bin/false plone
+RUN apt-get update -y
+RUN apt-get install -y mime-support libssl1.0.0
+COPY ./dpkgs /dpkgs
+# For use on ARM64:
+RUN dpkg -i /dpkgs/arm64/python2.4-minimal_2.4.6-8+xenial1_arm64.deb /dpkgs/arm64/python2.4_2.4.6-8+xenial1_arm64.deb
+RUN apt-get install -y build-essential libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libz-dev libssl-dev
+RUN dpkg -i /dpkgs/arm64/libpython2.4_2.4.6-8+xenial1_arm64.deb /dpkgs/arm64/python2.4-dev_2.4.6-8+xenial1_arm64.deb
+# # For use on AMD64:
+# RUN dpkg -i /dpkgs/amd64/python2.4-minimal_2.4.6-8+xenial1_amd64.deb /dpkgs/amd64/python2.4_2.4.6-8+xenial1_amd64.deb
+# RUN apt-get install -y build-essential libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libz-dev libssl-dev
+# RUN dpkg -i /dpkgs/amd64/libpython2.4_2.4.6-8+xenial1_amd64.deb /dpkgs/amd64/python2.4-dev_2.4.6-8+xenial1_amd64.deb
 
 FROM os as builder
 WORKDIR /app
